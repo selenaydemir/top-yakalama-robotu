@@ -1,0 +1,99 @@
+1.GİRİŞ 
+
+ Projede tek yönde atılan topları yakalayan tek mafsallı otonom bir robot tasarlandı. Robotun mafsal kısmı servo motor yardımı ile hareket ettirildi. Atılan topun konumunun algılanması için infrared kızıl ötesi sensör konumlandırıldı. Projede kontrol kısmına arduino uno yerleştirildi. Proje gereği ilerleyen aşamalarda robotun fonksiyonları da kolayca arttırılabilir. Örneklendirmek gerekirse, gerekli durumlar veya koşullarda renk şartı eklenebilir. Ya da mafsal arttırılarak robot daha fonksiyonel bir hale getirilebilir.
+
+1.1.Proje Detayı 
+
+Projenin düşük maliyetli ve hafif olması için mukavva malzemesi gövde yapımında kullanılması planlandı. Projede başlangıç aşaması olarak arduino uno kullanmak ve robot kolun topu algılayabilmesi için en az maliyete sahip infrared kızılötesi sensor kullanıldı. Projemi  https://www.youtube.com/watch?v=xM0H5jP7RxA projesinin topu takip etme prensibi ve https://www.youtube.com/watch?v=p539QrOD4Bg projesindeki robot koldan esinlenerek topu otonom bir şekilde tutacak sistem oluşturmak planlandı. 
+
+1.1.1.Robotun Planlanan Yapım Aşaması 
+
+  Projede robot kolunu mukavvadan yapmayı ve 1 adet servo motor kullanmayı planlıyorum. Robot kolun boyutu 1mm*20cm olarak düşünüldü. Bir servo motor kolun alt kısmında olup, kolun sağ ve sol hareketini kontrol etmektedir.  Böylece robotta 1 servo motor ile yakalama, sağa ve sola hareket işlemi kazandırılmak istenmektedir. Robot kolun topu algılayabilmesi için kolun uç kısmına infrared kızılötesi sensör   yerleştirilmek planlandırılmıştır. 
+ 
+2.PROJE YAPIM AŞAMASI
+
+1-Projenin amaçlarından biri de düşük maliyet olduğundan hafif, sağlam, fiyatı düşük olan mukavva malzemesi kullanıldı. 
+2- Projede maliyeti düşük, kodlarının kolay bir şekilde bulunabilmesi ve kolay bir şekilde kullanımı olması nedeni ile ARDUİNO UNO kullanıldım.
+3- Kolun açısal bir şekilde ilerlemesini istediğim için servo motor kullanıldım.
+4-Sensor olarak mesafesini ve açısı ayarlanabilir olduğundan ve hareketleri kolayca algılayabildiğinden İNFRARED KIZILÖTESİ SENSÖR kullanıldım.
+5-Projemde robot kolu gelen topu yakalamasını kolaylaştırmak için 2 mukavvayı üst üste gelecek şekil de yapıştırdım.
+6-Robot kolumu genişliği 6cm ve uzunluğunu 25 cm olarak hazırladım. 
+7-Daha sonra robotun sabit bir zenin üzerinde durması için bir kutu yaptım. Bu kutunun içine breardboard ve ordinonun rahatlıkla konumlandıra bilmemiz için boyutlarını uzunluğunu 16cm genişliğini 6cm ve yüksekliğini 6cm olarak belirledim. 
+
+
+
+
+
+
+    Şekil 1. Sabit zemin 
+
+8-Mafsal olarak seçtiğim servo motorumu robot kola taktım. Ve daha sonra sabit zeninin içine yerleştirdim.
+9-Robot kolun boyu SERVO motorun boyundan daha uzun olduğundan, hareket ederken alt kutuya temas etti. Bende hareketi kolaylaştırmak için yapmış olduğum kutunun üzerini robot kola paralel olacak şekilde 3cm derinliğinde bir yarık açtım ve bu sayede robot kol hareketi 180 derece tamamlamış oldu.
+10-Daha önce tasarladığım mekanizma sadece topu karşı tarafa geçmesini engelliyordu. Bende Projemin topu yakalaya bilmesi için bir robot kol tasarladım. 
+11-Robotumu bir önceki mekanizmamdan yaralanarak tasarladım. Daha Önce yaptığım dikdörtgen prizmayı zemin olarak kullandım. 
+12-Daha sonra zeminin üzerine çapı 5 Cm olan bir daire yerleştirdim. 
+13-Koyduğum dairenin alt kısmına servo motor yerleştirip 180 derece dönmesini sağladım.
+14- Daha sonra birbirine paralel olacak şekilde 2 karton levhayı zemine yerleştirdiğim daire parçanın üzerine dik bir şekilde yerleştirdim. Karton levhaları 10cm uzunluğunda alt taban uzunluğu 5cm üst taban uzunluğu 4cm olacak şekilde bir yamuk tasarladım. Daha iyi dengede durması için alt tabanı üst tabanına göre daha uzun olmasını tercih ettim. 
+
+
+
+
+
+
+Şekil 2. Sağa sola hareket mekanizması 
+
+15- Dik olarak yerleştirdiğim levhaların arasına bir dikdörtgen koydum ve dikdörtgen ile levhalar arasına 2 adet servo motor yerleştirdim. Dikdörtgenin boyutunu 4*2*10 olarak ayarladım. Bu şekilde ayarlamamın sebebi ise servo motorlarımın çalışma performansını artırmaktı.  
+16-Bu şekilde robot kolum zemin üzerinde hem 180 derece dönüş kabiliyeti hem de dikdörtgen sayesinde aşağı ve yukarı hareket edebildi. 
+17-Daha sonra dikdörtgenin ucuna bir kıskaç yapmayı düşündüm. Lakin yapacağım kıskacın içinden topun kayma veya içine tam yerleşmeme ihtimallerini göz önünde tutarak daha kesin bir sonuç buldum. 
+18-Kullanacağım topun yüzeyini cırt bant şerit ile kapladım. Daha sonra dikdörtgenin ucuna bir oval şekil tasarladım. Oval şeklin uzunluğunu 6cm, boyunu ise 4 cm olarak tasarladım. Daha sonra yaptığım oval cismin yüzeyini cırt bant ile kapladım ve aynı şekilde masa tenisi topunu da kapladım.
+19-Bu şekilde topun kayma olasılığını ortadan kaldırmış oldum. Topun yakalanma olasılığını da artırmış oldum. 
+20-Kızıl ötesi sensörlerini de yapmış olduğum oval şeklinin sağına ve solana gelecek şekilde konumlandırdım. Bu sayede göme alanını genişletmiş oldum.
+21- Yaptığım oval şekil sert atışlarda deforme olacağını düşündüğüm için onun yerine plastik kaşık kullanmayı düşündüm. Kaşığın oval kısmından kestim ve cırt bandı yapıştırdım bu sayede daha sağlam ve daha iyi kavramasını sağladı 
+ 
+Şekil 3. Robotun iskelet hali                                Şekil 4. Projenin devre şeması 
+
+ 
+Şekil 5. Projenin bağlantı şeması 
+
+22-Projemin devre şemasını kurdum. Daha sonra internet ve mail yolu ile ulaştığım kodları kendi projeme uyarladım. Daha sonra hazırladığım kodu ardinoya yükledim ve sorunsuz bir şekilde çalıştırdım. Kullandığım kod sayesinde sensörün göreceği mesafede cismi sağa ve sola hareket ettirdiğimizde robot kol 180 derece hareketini sorunsuz bir şekilde tamamladı. 
+23-Projemin deneme aşamasını gerçekleştirdim. Atılan topu belirli bir mesafede tutmayı başardı. 
+24-Projede atılan topun geliş açısını hesaplayamadığı için bazı atışlarımda istediğim gibi bir verim alamıyordum ve kızıl ötesi sensorlerinde görüş mesafesini ayarlayamadığım için sensorlerimi mesafe sensörleri ile değiştirdim. Kızılötesi sensöre göre ağırlığı daha fazla olduğu için servo motorlar zayıf kaldı. Bu sebepten ötürü servo motor yerine dc motor kullandım. 
+25-projede öncelikle 2 sensorun vcc ve gnd uçlarını breardboard üzerinde birleştirdim. Daha sonra ilk sensorun Trigpin ucunu pin 5’e 2. sensörün Trigpin ucunu pin 7 ye bağladım. Echopin uçlarının bağlantısını ise ilkinin pin 4 ile 2. Sinin pin 6 ile bağlantısını sağladım.
+26-daha sonra dc motorun dönüş hızını değiştirmek için motor sürücüsü kullanıldım. Motor sürücünün gnd ve vcc uçlarını sensorun uçları ile aynı breadboard üzerinde bağladım. Daha sonra arduino ile bağlantısını sağladım. Son olarak da motorun motor sürücü ile bağlantılarını ayarlayarak devremi tamamladım. 
+Şekil 6. Devre bağlantı şeması
+
+
+27-Daha önce tasarladığım iskeletin tutuş mesafesi kısıtlı olduğu için yeni bir iskelet tasarladım.
+28-iskeleti yapmaya dış iskeletten başladım. Öncelikle 4 adet tahta parçasını 27cm boyunda 46 cm genişliğinde dikdörtgen oluşturacak şekilde birleştirdim. Daha sonra önceden tasarladığım dikdörtgen prizmanın içine breardboard arduino ve motor sürücümü yerleştirdim.
+
+
+
+
+
+Şekil 7. Dikdörtgen pano                                                Şekil 8. Dikdörtgen prizma
+
+
+29-Oluşturduğum dikdörtgen panonun ortasına 3 cm genişliğinde 11cm ölçülerinde bir tahta parçası yerleştirdim. Yerleştirdiğim tahta parçasına bir delik deldim. Daha sonra deliğin hizasında kartonda yaptığım 2 alt taban uzunluğu 4 cm üst taban uzunluğu 6.30 cm ve 9 cm boyunda 2 adet yamuk parçalarını 130 derece açısı ile sabitledim, bu sayede gelen topu daha kapsamlı bir şekilde görebildi.
+
+
+
+
+
+
+
+
+
+                                              Şekil 9. Mesafe sensörleri
+
+30-daha sonra temin ettiğim motor ve tek tekerleği birbirine sabitledim ve daha rahat dengede durması için bir adet kartondan tekerlek yaptım. Daha sonra dikdörtgen panonun iki kenarına paralel şekilde bakıl tek sardım. Bakır tel ile tekerlek arasına bir kalın bakır tel yerleştirdim. Yerleştirdiğim bakır tel ile topu cırt bant ile kapladım bu sayede tekerlek bakır telin hizasında ileri ve geri hareketini rahat bir şekilde sağladı. Projemi bu şekilde tamamladım.
+
+ 
+
+
+
+
+
+
+
+
+                                     Şekil 10. Tekerlekler
